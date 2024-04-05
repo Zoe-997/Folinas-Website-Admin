@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+  --second-rgb: 250, 117, 115;
+  --btn-text: 225, 225, 225;
+  --btn-bg: 44, 31, 137;
+  --btn-text-hv: 225, 225, 225;
+  --btn-bg-hv: 26, 16, 98;
+  --box-shadow: 0_10px_15px_-3px_rgba(0,0,0,.1),_0_4px_6px_-4px_rgba(0,0,0,.1);
+  --bg-canvas: 0, 0, 0;
+}
+
+.dark {
+  --foreground-rgb: 255 255 255;
+  --background-rgb: 9 10 19;
+}
+
+body {
+  font-size: 14px;
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  min-height: 100vh;
+  overflow-y: hidden;
+}
+
+h1, h2 {
+  font-size: 38px;
+  line-height: 1.25;
+  font-weight: 600
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 600
+}
+
+h4 {
+  font-size: 15px;
+  line-height: 1.25;
+  font-weight: 600
+}
+
+a:hover {
+  color: rgb(var(--second-rgb))
+}
+
+/* carousel */
+
+/* responsive */
+@media screen and (min-width: 768px) {
+  h1, h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
