@@ -12,17 +12,18 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
     <html lang="en">
       <body className={inter.className}>
         <Header />
         <main>
           <div className="flex flex-wrap">
-            <Sidebar className="w-full max-w-[300px] md:min-h-screen" />
+            <Sidebar />
             <div className="w-full max-w-[calc(100%-300px)] p-5 overflow-y-auto">{children}</div>
           </div>
         </main>

@@ -55,15 +55,16 @@ const Sidebar = ({ className }: { className: string;}) => {
             link: '/',
             icon: PiArticle
         }
-    ]
+    ];     
+    
     return (
-        <aside className={`${className} bg-[#F3F5F7]`}>
+        <aside className={`${className?className:''} bg-[#F3F5F7] w-full md:min-h-screen transition-all duration-500`}>
             <ul className="py-5">
                 {sidebarData.map((item, index) => (
                     <li key={index} className="py-3 px-[15px]">
-                        <Link href={item.link} className="flex flex-wrap items-center gap-3 transition-all">
+                        <Link href={item.link} className="flex flex-wrap items-center gap-3 transition-all overflow-hidden">
                             {item.icon && <item.icon size={18} />}
-                            <span className="flex-1">{item.label}</span>
+                            <span className="flex-1 transition-all duration-700">{item.label}</span>
                         </Link>
                     </li>
                 ))}

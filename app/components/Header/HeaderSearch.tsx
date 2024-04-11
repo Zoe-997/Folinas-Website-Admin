@@ -21,7 +21,7 @@ const HeaderSearch = () => {
             <div className={`bg-white transition-all z-[1] duration-500 shadow-[var(--box-shadow)]`}>
                 <form onSubmit={handleSearch} className="flex flex-wrap border-[1px] px-2 py-2 w-full rounded">
                     <input type="text" placeholder="Search..." className="text-sm w-full flex-1 px-1 outline-none border-r-[1px]" onChange={handleInputChange} />
-                    <button type="submit" className="px-1 hover:text-[rgb(var(--second-rgb))]"><FiSearch /></button>
+                    <button type="submit" className="px-3 hover:text-[rgb(var(--second-rgb))]"><FiSearch /></button>
                 </form>
             </div>
         </div>
