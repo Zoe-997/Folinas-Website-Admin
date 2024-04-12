@@ -17,11 +17,16 @@ const Header = () => {
     const pathnameSplit = pathname.split('/');
     const breadcrumbs = pathnameSplit.filter((item) => !pathnameIgnore.includes(item));
 
-    const handleToggleSidebar = () => {
-        setCollapseSidebar(!collapseSidebar)
-        const htmlElement = document.getElementsByTagName('html')[0];
-        if (collapseSidebar) htmlElement.classList.add('collapsedSidebar');
-        else htmlElement.classList.remove('collapsedSidebar');
+    const handleToggleSidebar = () => {        
+        const htmlElement = document.getElementsByTagName('html')[0];            
+        if (!collapseSidebar) {
+            htmlElement.classList.add('collapsedSidebar'); 
+            setCollapseSidebar(true);
+        } else {
+            htmlElement.classList.remove('collapsedSidebar');
+            setCollapseSidebar(false);
+        }
+        
     };
 
     useEffect(() => {

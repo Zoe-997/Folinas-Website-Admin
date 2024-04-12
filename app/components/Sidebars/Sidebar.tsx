@@ -8,7 +8,7 @@ import { RiCustomerServiceFill } from "react-icons/ri";
 import { MdOutlineDashboardCustomize } from "react-icons/md";
 import { MdOutlineContactPhone, MdOutlineDirectionsBoat } from "react-icons/md";
 
-const Sidebar = ({ className }: { className: string;}) => {
+const Sidebar = ({ className }: { className?: string;}) => {
     const sidebarData = [
         {
             label: 'Dashboard',
@@ -17,12 +17,12 @@ const Sidebar = ({ className }: { className: string;}) => {
         },
         {
             label: 'Files',
-            link: '/',
+            link: '/files',
             icon: FaRegFile
         },
         {
             label: 'Our Story',
-            link: '/',
+            link: '/our-story',
             icon: LuClock9
         },
         {
