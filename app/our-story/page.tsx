@@ -1,5 +1,4 @@
-import type { Metadata } from 'next'
-import Table from '../components/Commons/Table';
+import type { Metadata } from 'next';
  
 export const metadata: Metadata = {
   title: 'Our Story - Admin Folinas LLC',
