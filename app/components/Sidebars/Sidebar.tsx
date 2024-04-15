@@ -27,27 +27,27 @@ const Sidebar = ({ className }: { className?: string;}) => {
         },
         {
             label: 'Organize Us',
-            link: '/',
+            link: '/organize',
             icon: FaRegBuilding
         },
         {
             label: 'Partners',
-            link: '/',
+            link: '/partners',
             icon: MdOutlineDashboardCustomize
         },
         {
             label: 'Contact',
-            link: '/',
+            link: '/contact-us',
             icon: MdOutlineContactPhone
         },
         {
             label: 'Services',
-            link: '/',
+            link: '/services',
             icon: RiCustomerServiceFill
         },
         {
             label: 'Recruitment',
-            link: '/',
+            link: '/recruitment',
             icon: MdOutlineDirectionsBoat
         },
         {

@@ -1,7 +1,6 @@
 
 'use client';
 import { usePathname, useSearchParams } from 'next/navigation';
-import Container from "./Container";
 import Link from 'next/link';
 
 const Breadcrumb = () => {
@@ -30,7 +29,11 @@ const Breadcrumb = () => {
                     )
                 })}
             </ul>
-            {breadcrumbs.length > 0 ? <h2 className="text-lg md:text-2xl capitalize">{pageTitle}</h2> : <h1 className="text-lg md:text-2xl  capitalize">{pageTitle}</h1>}
+            {breadcrumbs.length > 0 ? 
+                <h2 className="text-lg md:text-2xl capitalize">{pageTitle}</h2> 
+            : 
+                <h1 className="text-lg md:text-2xl  capitalize">{pageTitle}</h1>
+            }
         </div>
     );
 }

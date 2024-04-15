@@ -27,7 +27,7 @@ export default function RootLayout({
             <Sidebar />
             <div className="w-full max-w-[calc(100%-300px)] h-[calc(100vh-60px)] p-10 overflow-y-auto">
               <Breadcrumb />
-              {children}
+              <div className="mt-10">{children}</div>
             </div>
           </div>
         </main>
